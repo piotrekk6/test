@@ -32,6 +32,8 @@ public class Info {
     @Value("${myFilteredProperty}")
     private String myFilteredProperty;
 
+    @Value("${myFunction}")
+    private String myFunction;
 
 
 
@@ -46,6 +48,7 @@ public class Info {
         model.addAttribute("basdir", basedir);
         model.addAttribute("name", name);
         model.addAttribute("myFilteredProperty", myFilteredProperty);
+        model.addAttribute("methodOutput", myFunction);
 
         return "index";
     }
