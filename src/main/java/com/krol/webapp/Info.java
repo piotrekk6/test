@@ -46,6 +46,7 @@ public class Info {
         model.addAttribute("basdir", basedir);
         model.addAttribute("name", name);
         model.addAttribute("myFilteredProperty", myFilteredProperty);
+        model.addAttribute("myStaticMethodOutput",pl.external.MyClass.myStaticMethodOutput());
 
         return "index";
     }

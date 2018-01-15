@@ -9,6 +9,6 @@ spring.version: ${springVersion}<br>
 version: ${projectVersion}<br>
 basedir: ${basdir}<br>
 myFilteredProperty: ${myFilteredProperty}<br>
-
+myStaticMethodOutput: ${myStaticMethodOutput}<br>
 </body>
 </html>
