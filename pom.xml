@@ -57,6 +57,7 @@
         <java.home>${env.OS}</java.home>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -104,7 +105,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <packagingIncludes>${basedir}/externalLibs/myjar.jar, *.jar</packagingIncludes>
+                    <packagingIncludes>${basedir}/externalLibs/*.jar</packagingIncludes>
                 </configuration>
             </plugin>
         </plugins>
