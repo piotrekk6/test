@@ -85,7 +85,13 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>pl.external</groupId>
+            <artifactId>myjar</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/externalLibs/myjar.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
@@ -99,13 +105,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <packagingIncludes>${basedir}/externalLibs/myjar.jar</packagingIncludes>
-                </configuration>
             </plugin>
         </plugins>
         <filters>
