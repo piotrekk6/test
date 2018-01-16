@@ -24,6 +24,9 @@
             <properties>
                 <X>development</X>
             </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>test</id>
@@ -42,9 +45,6 @@
             <properties>
                 <X>none</X>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
 
 
