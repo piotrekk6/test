@@ -6,7 +6,7 @@
     <groupId>com.krol</groupId>
     <artifactId>webapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>webapp</name>
     <description>Demo project for Spring Boot</description>
@@ -109,6 +109,7 @@
         </plugins>
         <filters>
             <filter>src/main/filters/own.properties</filter>
+            <filter>src/main/Settings/setting.property</filter>
         </filters>
     </build>
 
