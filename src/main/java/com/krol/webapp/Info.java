@@ -32,6 +32,9 @@ public class Info {
     @Value("${myFilteredProperty}")
     private String myFilteredProperty;
 
+    @Value("${myVariableFromSettings}")
+    private String myVariableFromSettings;
+
 
 
 
@@ -47,6 +50,7 @@ public class Info {
         model.addAttribute("name", name);
         model.addAttribute("myFilteredProperty", myFilteredProperty);
         model.addAttribute("myStaticMethodOutput",pl.external.MyClass.myStaticMethodOutput());
+        model.addAttribute("myVariableFromSettings", myVariableFromSettings);
 
         return "index";
     }

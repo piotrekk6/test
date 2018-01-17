@@ -10,5 +10,6 @@ version: ${projectVersion}<br>
 basedir: ${basdir}<br>
 myFilteredProperty: ${myFilteredProperty}<br>
 myStaticMethodOutput: ${myStaticMethodOutput}<br>
+variableFromSettings: ${myVariableFromSettings}
 </body>
 </html>
